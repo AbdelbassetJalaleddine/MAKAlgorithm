@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#FF917EFE"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewEditDistance"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Distance"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/editTextEditDistance"
+        app:layout_constraintTop_toBottomOf="@id/Results"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextEditDistance"
+        />
+    <EditText
+        android:id="@+id/editTextEditDistance"
+        android:layout_width="100dp"
+        android:clickable="false"
+        android:textStyle="bold"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/Results"
+        app:layout_constraintStart_toEndOf="@id/textViewEditDistance"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewSimilarity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Similarity"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/editTextSimilarity"
+        app:layout_constraintTop_toBottomOf="@id/textViewEditDistance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextSimilarity"
+        />
+    <EditText
+        android:id="@+id/editTextSimilarity"
+        android:layout_width="100dp"
+        android:clickable="false"
+        android:textStyle="bold"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextEditDistance"
+        app:layout_constraintStart_toEndOf="@id/textViewSimilarity"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/RNASequences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RNA Sequences"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#FF917EFE"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextSimilarity"/>
+
+    <EditText
+        android:id="@+id/editTextRNA1"
+        android:layout_margin="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/RNASequences"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <TextView
+        android:id="@+id/textViewPatch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Patch"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextRNA1"/>
+    <EditText
+        android:id="@+id/editTextRNA2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="false"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/textViewPatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/textViewEditScript"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Edit Script"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextRNA2"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
